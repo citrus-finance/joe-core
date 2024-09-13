@@ -2,6 +2,14 @@
 
 This repository contains all the contracts for Trader Joe.
 
+## Citrus fork
+
+This repository is based on commit [e2667042be1643b1bdb91447bb9e7383cc6798e3 / v2.4.6](https://github.com/traderjoe-xyz/joe-core/commit/e2667042be1643b1bdb91447bb9e7383cc6798e3)
+
+We made the following changes:
+
+- Added `feeTo` to `JoeFactory.sol` so that protocol fees are turned on automatically
+
 ## Deployed Contracts
 
 N/A

@@ -15,7 +15,7 @@ describe("JoeMaker", function () {
       ["usdc", this.ERC20Mock, ["USDC", "USDC", getBigNumber("10000000")]],
       ["weth", this.ERC20Mock, ["WETH", "ETH", getBigNumber("10000000")]],
       ["strudel", this.ERC20Mock, ["$TRDL", "$TRDL", getBigNumber("10000000")]],
-      ["factory", this.JoeFactory, [this.alice.address]],
+      ["factory", this.JoeFactory, [this.alice.address, "0x0000000000000000000000000000000000000000"]],
     ])
     await deploy(this, [["bar", this.JoeBar, [this.joe.address]]])
     await deploy(this, [["joeMaker", this.JoeMaker, [this.factory.address, this.bar.address, this.joe.address, this.weth.address]]])
